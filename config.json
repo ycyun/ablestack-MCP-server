@@ -1,0 +1,22 @@
+{
+    "mcpServers": {
+        "mcp-cloudstack-421": {
+            "command": "node",
+            "args": [
+                "server.js"
+            ],
+            "env": {
+                "HOME": "/Users/ycyun",
+                "LOGNAME": "ycyun",
+                "PATH": "/Users/ycyun/.npm/_npx/5a9d879542beca3a/node_modules/.bin:/Users/ycyun/GolandProjects/testmcp/node_modules/.bin:/Users/ycyun/GolandProjects/node_modules/.bin:/Users/ycyun/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/ycyun/.langflow/uv:/opt/anaconda3/bin:/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/iTerm.app/Contents/Resources/utilities:/Users/ycyun/Library/Application Support/JetBrains/Toolbox/scripts:/Users/ycyun/go/bin",
+                "SHELL": "/bin/zsh",
+                "TERM": "xterm-256color",
+                "USER": "ycyun",
+                "CLOUDSTACK_ENDPOINT": "http://10.10.32.10:8080/client/api",
+                "CLOUDSTACK_API_KEY": "HMrNWD6A1kyshz2-O1yol58t8g9xAKXWK0paoaiv0VI",
+                "CLOUDSTACK_SECRET_KEY": "1a2e6V79Wj8Ajch8x5E4jkxbXcXGcFfIypMl8q9LRE0",
+                "CLOUDSTACK_SIG_ALGO": "sha256"
+            }
+        }
+    }
+}

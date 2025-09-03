@@ -1,0 +1,9 @@
+{
+  "name": "mcp-cloudstack-421",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "zod": "^3.23.8"
+  }
+}
