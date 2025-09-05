@@ -3,7 +3,7 @@
 [![mold](https://img.shields.io/badge/ablecloud-orange?style=flat&logo=apachecloudstack&logoColor=white&logoSize=auto&label=mold&labelColor=blue&color=orange&cacheSeconds=1&link=ablecloud.io)](https://ablecloud.io/)
 
 ABLESTACK MOLD API를 MCP(Model Context Protocol)로 노출하는 서버입니다.  
-**`mold_*`** 네임스페이스의 MCP 툴을 통해 CloudStack API를 직접 호출·탐색·디버그할 수 있습니다.
+**`mold_*`** 네임스페이스의 MCP 툴을 통해 MOLD API를 직접 호출·탐색·디버그할 수 있습니다.
 
 ---
 
@@ -23,7 +23,7 @@ ABLESTACK MOLD API를 MCP(Model Context Protocol)로 노출하는 서버입니�
 ## 요구 사항
 
 - Node.js **v18+**
-- 네트워크에서 CloudStack API endpoint에 접근 가능
+- 네트워크에서 MOLD API endpoint에 접근 가능
 
 ---
 
@@ -44,15 +44,15 @@ node server.js
 ```json
 {
   "mcpServers": {
-    "mcp-cloudstack-421": {
+    "mcp-mold-server": {
       "command": "node",
       "args": ["server.js"],
       "env": {
-        "CLOUDSTACK_ENDPOINT": "http://10.10.32.10:8080/client/api",
-        "CLOUDSTACK_API_KEY": "<YOUR_API_KEY>",
-        "CLOUDSTACK_SECRET_KEY": "<YOUR_SECRET_KEY>",
-        "CLOUDSTACK_SIG_ALGO": "sha256",   // 또는 "sha1"
-        "CLOUDSTACK_AUTOREGISTER": "all"   // (선택) 시작 시 전체 API 자동 등록
+        "MOLD_ENDPOINT": "http://10.10.32.10:8080/client/api",
+        "MOLD_API_KEY": "<YOUR_API_KEY>",
+        "MOLD_SECRET_KEY": "<YOUR_SECRET_KEY>",
+        "MOLD_SIG_ALGO": "sha256",   // 또는 "sha1"
+        "MOLD_AUTOREGISTER": "all"   // (선택) 시작 시 전체 API 자동 등록
       }
     }
   }
@@ -163,13 +163,13 @@ command=deployVirtualMachine
 
 | 이름 | 의미 | 기본 |
 |---|---|---|
-| `CLOUDSTACK_ENDPOINT` | `http(s)://HOST:PORT/client/api` | (없음) |
-| `CLOUDSTACK_API_KEY` | API 키 | (없음) |
-| `CLOUDSTACK_SECRET_KEY` | 시크릿 키 | (없음) |
-| `CLOUDSTACK_SIG_ALGO` | `sha1` 또는 `sha256` | `sha256` |
-| `CLOUDSTACK_AUTOREGISTER` | `"all"`이면 시작 시 전체 자동 등록 | (비활성) |
+| `MOLD_ENDPOINT` | `http(s)://HOST:PORT/client/api` | (없음) |
+| `MOLD_API_KEY` | API 키 | (없음) |
+| `MOLD_SECRET_KEY` | 시크릿 키 | (없음) |
+| `MOLD_SIG_ALGO` | `sha1` 또는 `sha256` | `sha256` |
+| `MOLD_AUTOREGISTER` | `"all"`이면 시작 시 전체 자동 등록 | (비활성) |
 
-> 실행 중에는 `mold_setConfig`로 변경·저장 가능. 저장 파일: `~/.config/mcp-cloudstack/config.json` (파일 권한 `0600`, 디렉터리 `0700`)
+> 실행 중에는 `mold_setConfig`로 변경·저장 가능. 저장 파일: `~/.config/mcp-mold/config.json` (파일 권한 `0600`, 디렉터리 `0700`)
 
 ---
 
@@ -194,7 +194,7 @@ command=deployVirtualMachine
 
 ## 라이선스
 
-- [LICENSE](LICENSE.md)) 파일을 확인하세요(MIT).
+- [LICENSE](LICENSE.md) 파일을 확인하세요(MIT).
 
 ---
 

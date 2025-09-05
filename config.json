@@ -6,7 +6,7 @@
                 "server.js"
             ],
             "env": {
-                "CLOUDSTACK_AUTOREGISTER": "all"
+                "MOLD_AUTOREGISTER": "all"
             }
         }
     }
